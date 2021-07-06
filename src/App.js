@@ -1,12 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function App() {
 
 
-  const [fnumber, setFnumber] = useState();
-  const [snumber, setSnumber] = useState();
-  const [result, setResult] = useState();
+  const [fnumber, setFnumber] = useState('');
+  const [snumber, setSnumber] = useState('');
+  const [result, setResult] = useState('');
+
+  //ComponentDidMount()
+  useEffect(() => {
+    console.log("Componente Did Mount()");
+  }, [])
+
+
+  //ComponenteDidUpdate()
+  useEffect(() => {
+    console.log(fnumber);
+  }, [fnumber])
 
 
   const somar = () => {
@@ -15,6 +26,10 @@ function App() {
 
     setResult(resultAdd);
   }
+
+
+
+
 
 
   return (
