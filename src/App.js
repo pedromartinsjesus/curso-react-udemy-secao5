@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 
+// Nesta aula só foi apresentado a arquitetura flux que é a arquitetura
+// do Redux 
+
 function App() {
 
 
